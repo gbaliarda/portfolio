@@ -1,0 +1,124 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    max-height: 100vh;
+
+    color: #E2E2E2;
+    font-weight: 500;
+        
+    padding-top: 20vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    * {
+        margin: 0;
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .name {
+        letter-spacing: 2px;
+        padding-top: .4em;
+        font-size: 42px;
+    }
+
+    .description {
+        font-style: italic;
+        letter-spacing: 2px;
+        padding-top: .2em;
+        font-size: 26px;
+        color: #D2D2D2;
+    }
+
+    .lineOne {
+        margin-top: 1em;
+        width: 450px;
+        background-color: #E2E2E2;
+    }
+
+    .buttons {
+        width: 600px;
+        height: 200px;
+        display: flex;
+
+        .leftButtons {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            border-collapse: collapse;
+
+            :first-child {
+                border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
+            }
+        }
+        
+        .rightButtons {
+            width: 50%;
+            height: 100%;
+            border-left: 2px solid #E2E2E2;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-collapse: collapse;
+
+            :last-child {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+        }
+
+        .button {
+            border: 1px solid #E2E2E2;
+            padding: 8px 25px;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        .button:hover {
+            background-color: #E2E2E2;
+            color: #061324;
+        }
+    }
+
+    .icons {
+        display: flex;
+        width: 180px;
+        justify-content: space-between;
+
+        .iconLink {
+            box-sizing: border-box;
+        }
+
+        .icon {
+            height: 50px;
+            width: 50px;
+            border: 2px solid #E2E2E2;
+            border-radius: 50%;
+            padding: 5px;
+        }
+
+        .icon:hover {
+            background-color: #0c2647;
+        }
+    }
+
+
+
+    .endDiv {
+        flex-grow: 1;
+        width: 3px;
+        transform: scaleX(0.5);
+        background: linear-gradient(rgba(226, 226, 226, 1), rgba(200, 170, 223, 1), rgba(120, 0, 215, 1));
+    }
+}
