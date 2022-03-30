@@ -39,10 +39,77 @@
     }
 
     .titleLine {
-        width: 800px;
+        width: 758px;
         margin: 0;
+        margin-right: 162px;
         background-color: #7800D7;
         border: 0;
         height: 2px;
+    }
+
+    .description {
+        border-left: 2px solid #7800D7;
+        width: 920px;
+        height: 40vh;
+        padding-left: 30px;
+        display: flex;
+        .descriptionText {
+            margin-top: 30px;
+            margin-right: 40px;
+            color: #fff;
+            text-align: justify;
+            width: 600px;
+            letter-spacing: 1px;
+        }
+
+        .firstDescriptionText {
+            margin-top: 0;
+        }
+
+        .profileImage {
+            display: flex;
+            flex-direction: column;
+
+            .topPart {
+                height: 30px;
+                display: flex;
+
+                .topLeftPart {
+                    border-right: 1px solid #7800D7;
+                    height: 100%;
+                    width: 50%;
+                }
+
+                .topRightPart {
+                    border-left: 1px solid #7800D7;
+                    height: 100%;
+                    width: 50%;
+                }
+            }
+
+            .imageContainer {
+                height: 330px;
+                border-radius: 10px;
+                box-shadow: 
+                    20px 20px 0 -1px #061324,
+                    20px 20px 0px 2px #7800D7;
+            }
+        }
+    }
+
+    .skills {
+        flex-grow: 1;
+        width: 920px;
+        display: flex;
+        .borderLeft {
+            height: 100%;
+            width: 2px;
+            background: linear-gradient(rgba(120, 0, 215, 1), rgba(209, 0, 50, 1));
+        }
+
+        .content {
+            height: 100%;
+            width: 918px;
+        }
     }
 }
