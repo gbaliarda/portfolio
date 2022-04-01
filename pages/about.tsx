@@ -2,12 +2,13 @@ import type { NextPage } from 'next'
 import styles from '../styles/About.module.scss'
 import profilePNG from '../public/icono.png'
 import Image from 'next/image'
+import SkillBar from '../components/skillBar'
 
 const aboutPage: NextPage = () => {
     return (
         <div className={styles.container}>
             <div className={styles.title}>
-                <span className={styles.name}>About Me</span>
+                <p className={styles.name}>About Me</p>
                 <div className={styles.leftTitle}></div>
                 <div className={styles.rightTitle}></div>
             </div>
@@ -25,14 +26,27 @@ const aboutPage: NextPage = () => {
                         <div className={styles.topRightPart}></div>
                     </div>
                     <div className={styles.imageContainer}>
-                        <Image src={profilePNG} alt="Profile photo" height='380px' /> 
+                        <img src="icono.png" alt="Profile photo" className={styles.profileImg} />
                     </div>
                 </div>
             </div>
             <div className={styles.skills}>
                 <div className={styles.borderLeft}></div>
                 <div className={styles.content}>
-                
+                    <div className={styles.leftContent}>
+                        <SkillBar skillName='Java' progress={80}></SkillBar>
+                        <SkillBar skillName='C' progress={85}></SkillBar>
+                        <SkillBar skillName='HTML' progress={75}></SkillBar>
+                        <SkillBar skillName='CSS' progress={60}></SkillBar>
+                        <SkillBar skillName='JavaScript' progress={60}></SkillBar>
+                    </div>
+                    <div className={styles.rightContent}>
+                        <SkillBar skillName='Python' progress={40}></SkillBar>
+                        <SkillBar skillName='Solidity' progress={40}></SkillBar>
+                        <SkillBar skillName='Ruby' progress={50}></SkillBar>
+                        <SkillBar skillName='SQL' progress={80}></SkillBar>
+                        <SkillBar skillName='React' progress={70}></SkillBar>
+                    </div>
                 </div>
             </div>
         </div>

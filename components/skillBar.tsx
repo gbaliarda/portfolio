@@ -1,16 +1,17 @@
-import styles from "./SkillBar.module.scss"
-import { NextComponentType } from 'next'
+import styles from "./styles/SkillBar.module.scss"
 
 interface Props {
-    skillName: string
+    skillName: string,
+    progress: number,
 }
 
-const skillBar: NextComponentType<Props> = ({}) => {
+const skillBar = ({ skillName, progress }: Props) => {
     return (
         <div className={styles.container}>
-            <div className={styles.text}><span>{}</span></div>
-            <div className={styles.progressBar}></div>
-            <div className={styles.bar}></div>
+            <div className={styles.text}><span>{skillName}</span></div>
+            <div className={styles.bar}>
+                <div className={styles.progressBar} style={{ "width": progress * 2.5 }}></div>
+            </div>
         </div>
     )
 }

@@ -2,7 +2,6 @@
     height: 100vh;
     width: 100vw;
     max-width: 100vw;
-    max-height: 100vh;  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,6 +18,7 @@
             right: 0;
             margin: auto;
             width:fit-content;
+
             color: #E2E2E2;
             background-color: #061324;
             font-size: 32px;
@@ -28,7 +28,7 @@
         .leftTitle {
             width: 50%;
             height: 100%;
-            border-right: 1px solid #7800D7;
+            border-right: 2px solid #7800D7;
         }
 
         .rightTitle {
@@ -50,13 +50,13 @@
     .description {
         border-left: 2px solid #7800D7;
         width: 920px;
-        height: 40vh;
+        height: 350px;
         padding-left: 30px;
         display: flex;
         .descriptionText {
             margin-top: 30px;
             margin-right: 40px;
-            color: #fff;
+            color: #c2c2c2;
             text-align: justify;
             width: 600px;
             letter-spacing: 1px;
@@ -93,6 +93,10 @@
                 box-shadow: 
                     20px 20px 0 -1px #061324,
                     20px 20px 0px 2px #7800D7;
+
+                .profileImg {
+                    height: 330px;
+                }
             }
         }
     }
@@ -108,8 +112,18 @@
         }
 
         .content {
+            padding-top: 80px;
+            justify-content: space-evenly;
             height: 100%;
             width: 918px;
+            display: flex;
+            height: 280px;
+
+            .leftContent, .rightContent {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
         }
     }
 }
