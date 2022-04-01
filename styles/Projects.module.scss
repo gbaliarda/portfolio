@@ -1,4 +1,73 @@
 .container {
     height: 100vh;
     width: 100vw;
+
+
+    .content {
+        width: 920px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .borderTop {
+            height: 2px;
+            width: 100%;
+            display: flex;
+
+            .borderRed {
+                width: 50.1%;
+                background-color: rgba(209, 0, 50, 1);
+            }
+        }
+
+        .title {
+            height: 90px;
+            width: 200px;
+            display: flex;
+            position: relative;
+
+            .name {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width:fit-content;
+
+                color: #E2E2E2;
+                background-color: #061324;
+                font-size: 32px;
+                top: 25%;
+            }
+
+            .leftTitle {
+                width: 50%;
+                height: 100%;
+                border-right: 2px solid rgba(209, 0, 50, 1);
+            }
+
+            .rightTitle {
+                width: 50%;
+                height: 100%;
+                border-left: 1px solid rgba(209, 0, 50, 1);
+            }
+        }
+
+        .titleLine {
+            width: 100%;
+            margin: 0;
+            background-color: rgba(209, 0, 50, 1);
+            border: 0;
+            height: 2px;
+        }
+
+        .projects{
+            padding-top: 20px;
+            width: 100%;
+            display: grid; 
+            grid-template-columns: repeat(3,1fr);
+            justify-items: center;
+            row-gap: 30px;
+        }
+    }
 }

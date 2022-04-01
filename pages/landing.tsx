@@ -24,7 +24,7 @@ const landingPage: NextPage = () => {
                         <a href="#about" className={styles.button}>ABOUT</a>
                     </div>
                     <div className={styles.rightButtons}>
-                        <a href="#" className={styles.button}>PROJECTS</a>
+                        <a href="#projects" className={styles.button}>PROJECTS</a>
                         <a href="#" className={styles.button}>RESUME</a>
                     </div>
                 </div>

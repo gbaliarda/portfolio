@@ -26,6 +26,10 @@ const Home: NextPage = () => {
           <section id="about">
             <About></About>
           </section>
+
+          <section id="projects">
+            <Projects></Projects>
+          </section>
         </div>
       </main>
     </div>
