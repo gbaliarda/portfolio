@@ -21,7 +21,7 @@ const ProjectCard = (props: Props) => {
             <p className={styles.description}>{props.description}</p>
             <div className={styles.tech}>
                 {props.tech.map((tec) => {
-                    return <p>{tec}</p>
+                    return <p key={tec}>{tec}</p>
                 })}
             </div>
         </div>
