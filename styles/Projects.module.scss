@@ -1,56 +1,70 @@
 .container {
-    .content {
-        width: 903px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    .borderTop {
+        min-width: 300px;
+    }
+
+    .titleLine {
+        min-width: 300px;
+    }
+
+    .title {
+        height: 90px;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .name {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: fit-content;
+
+            color: #E2E2E2;
+            background-color: #061324;
+            font-size: 32px;
+            top: 25%;
+        }
+
+        .leftTitle {
+            width: 50%;
+            height: 100%;
+            border-right: 2px solid rgba(209, 0, 50, 1);
+        }
+
+        .rightTitle {
+            width: 50%;
+            height: 100%;
+            border-left: 1px solid rgba(209, 0, 50, 1);
+        }
+    }
+
+
+    @media (min-width: 940px) {
         .borderTop {
             height: 2px;
-            width: 100%;
+            width: 920px;
             display: flex;
 
             .borderRed {
-                width: 50.1%;
+                width: 50%;
                 background-color: rgba(209, 0, 50, 1);
             }
         }
 
-        .title {
-            height: 90px;
-            width: 200px;
-            display: flex;
-            position: relative;
-
-            .name {
-                position: absolute;
-                left: 0;
-                right: 0;
-                margin: auto;
-                width: fit-content;
-
-                color: #E2E2E2;
-                background-color: #061324;
-                font-size: 32px;
-                top: 25%;
-            }
-
-            .leftTitle {
-                width: 50%;
-                height: 100%;
-                border-right: 2px solid rgba(209, 0, 50, 1);
-            }
-
-            .rightTitle {
-                width: 50%;
-                height: 100%;
-                border-left: 1px solid rgba(209, 0, 50, 1);
-            }
-        }
-
         .titleLine {
-            width: 100%;
+            width: 920px;
             margin: 0;
             background-color: rgba(209, 0, 50, 1);
             border: 0;
@@ -59,9 +73,67 @@
 
         .projects {
             padding-top: 20px;
-            width: 100%;
+            min-width: 920px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            row-gap: 30px;
+            margin-bottom: 50px;
+        }
+    }
+
+    @media (max-width: 940px) {
+        .borderTop {
+            height: 2px;
+            width: 95vw;
+            display: flex;
+
+            .borderRed {
+                width: 50%;
+                background-color: rgba(209, 0, 50, 1);
+            }
+        }
+
+        .titleLine {
+            width: 95vw;
+            margin: 0;
+            background-color: rgba(209, 0, 50, 1);
+            border: 0;
+            height: 2px;
+        }
+
+        .projects {
+            padding-top: 20px;
+            display: grid;
+            width: 80vw;
+            min-width: 600px;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            row-gap: 30px;
+            margin-bottom: 50px;
+        }
+    }
+
+    @media (max-width: 760px) {
+        .borderTop {
+            height: 2px;
+            width: 70vw;
+            display: flex;
+
+            .borderRed {
+                width: 100%;
+                background-color: rgba(209, 0, 50, 1);
+            }
+        }
+    }
+
+    @media (max-width: 650px) {
+        .projects {
+            padding-top: 20px;
+            display: grid;
+            width: 80vw;
+            min-width: 600px;
+            grid-template-columns: repeat(1, 1fr);
             justify-items: center;
             row-gap: 30px;
             margin-bottom: 50px;
