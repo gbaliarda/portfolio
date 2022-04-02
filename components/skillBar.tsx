@@ -10,7 +10,7 @@ const skillBar = ({ skillName, progress }: Props) => {
         <div className={styles.container}>
             <div className={styles.text}><span>{skillName}</span></div>
             <div className={styles.bar}>
-                <div className={styles.progressBar} style={{ "width": progress * 2.5 }}></div>
+                <div className={styles.progressBar} style={{ "width": progress * 1.5 }}></div>
             </div>
         </div>
     )

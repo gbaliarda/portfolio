@@ -1,7 +1,5 @@
 import type { NextPage } from 'next'
 import styles from '../styles/About.module.scss'
-import profilePNG from '../public/icono.png'
-import Image from 'next/image'
 import SkillBar from '../components/skillBar'
 
 const aboutPage: NextPage = () => {

@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import styles from '../styles/Landing.module.scss'
 import Image from 'next/image'
-import triangleSVG from '../public/triangle.svg'
 import linkedinSVG from '../public/icons8-linkedin.svg'
 import githubSVG from '../public/icons8-github.svg'
 import mailSVG from '../public/icons8-mail.svg'

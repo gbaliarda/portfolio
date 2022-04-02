@@ -21,4 +21,10 @@
             border-radius: 10px;
         }
     }
+
+    @media (max-width: 500px) {
+        .bar {
+            width: 150px;
+        }
+    }
 }
