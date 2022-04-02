@@ -10,7 +10,7 @@ const landingPage: NextPage = () => {
     return (
         <div className={styles.container}>
             <div className={styles.content}>
-                <Image src={triangleSVG} alt="Triangle photo" className={styles.triangle} height='70px' />
+                <img src="triangle.svg" alt="Triangle photo" className={styles.triangle} />
                 <div className={styles.mainContainer}>
                     <h1 className={styles.name}>Gonzalo Baliarda</h1>
                     <p className={styles.description}>Software Developer</p>

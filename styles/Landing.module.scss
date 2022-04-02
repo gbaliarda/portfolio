@@ -6,7 +6,7 @@
 
     color: #E2E2E2;
     font-weight: 500;
-        
+
     padding-top: 20vh;
 
     display: flex;
@@ -21,75 +21,178 @@
     .content {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
 
-    .name {
-        letter-spacing: 2px;
-        padding-top: .4em;
-        font-size: 42px;
-    }
-
-    .description {
-        font-style: italic;
-        letter-spacing: 2px;
-        padding-top: .2em;
-        font-size: 26px;
-        color: #D2D2D2;
-    }
-
-    .lineOne {
-        margin-top: 1em;
-        width: 450px;
-        background-color: #E2E2E2;
-    }
-
-    .buttons {
-        width: 600px;
-        height: 200px;
-        display: flex;
-
-        .leftButtons {
-            width: 50%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            border-collapse: collapse;
-
-            :first-child {
-                border-bottom-left-radius: 5px;
-                border-top-left-radius: 5px;
-            }
-        }
-        
-        .rightButtons {
-            width: 50%;
-            height: 100%;
-            border-left: 2px solid #E2E2E2;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            border-collapse: collapse;
-
-            :last-child {
-                border-top-right-radius: 5px;
-                border-bottom-right-radius: 5px;
-            }
+    @media (min-width: 600px) {
+        .triangle {
+            height: 70px;
         }
 
-        .button {
-            border: 1px solid #E2E2E2;
-            padding: 8px 25px;
-            font-size: 16px;
-            letter-spacing: 1px;
+        .name {
+            letter-spacing: 2px;
+            padding-top: .4em;
+            font-size: 38px;
         }
 
-        .button:hover {
+        .description {
+            font-style: italic;
+            letter-spacing: 2px;
+            padding-top: .2em;
+            font-size: 26px;
+            color: #D2D2D2;
+        }
+
+        .lineOne {
+            margin-top: 1em;
+            width: 450px;
             background-color: #E2E2E2;
-            color: #061324;
+        }
+
+        .buttons {
+            width: 600px;
+            height: 200px;
+            display: flex;
+
+            .leftButtons {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                border-right: 1px solid #E2E2E2;
+                justify-content: flex-end;
+
+
+                :first-child {
+                    border-bottom-left-radius: 5px;
+                    border-top-left-radius: 5px;
+                }
+
+                :last-child {
+                    margin-right: -1px;
+                }
+            }
+
+            .rightButtons {
+                width: 50%;
+                height: 100%;
+                border-left: 1px solid #E2E2E2;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                :last-child {
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+            }
+
+            .button {
+                border: 1px solid #E2E2E2;
+                padding: 8px 25px;
+                font-size: 16px;
+                letter-spacing: 1px;
+                border-collapse: collapse;
+            }
+
+            .button:hover {
+                background-color: #E2E2E2;
+                color: #061324;
+            }
         }
     }
+
+    @media (max-width: 600px) {
+        .triangle {
+            width: 80vw;
+            min-width: 270px;
+        }
+
+        .name {
+            letter-spacing: 2px;
+            padding-top: .5em;
+            font-size: calc(12px + 4vw);
+        }
+
+        .description {
+            font-style: italic;
+            letter-spacing: 2px;
+            padding-top: .2em;
+            font-size: calc(10px + 2.5vw);
+            color: #D2D2D2;
+        }
+
+        .lineOne {
+            margin-top: 1em;
+            width: 80vw;
+            min-width: 270px;
+            background-color: #E2E2E2;
+        }
+
+        .buttons {
+            width: 80vw;
+            min-width: 280px;
+            height: 30vh;
+            min-height: 180px;
+            display: flex;
+            border-collapse: collapse;
+
+            .leftButtons {
+                width: 50%;
+                height: 100%;
+                border-right: 1px solid #E2E2E2;
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                row-gap: 30px;
+                align-items: flex-end;
+
+                .button {
+                    border-bottom-left-radius: 5px;
+                    border-top-left-radius: 5px;
+                    margin-right: -1px;
+                }
+            }
+
+            .rightButtons {
+                width: 50%;
+                height: 100%;
+                border-left: 1px solid #E2E2E2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                row-gap: 30px;
+                align-items: flex-start;
+
+                .button {
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+            }
+
+            .button {
+                border: 1px solid #E2E2E2;
+                padding: 8px 25px;
+                font-size: 16px;
+                letter-spacing: 1px;
+                border-collapse: collapse;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 37vw;
+                height: 6vh;
+                min-width: 125px;
+                min-height: 40px;
+            }
+
+            .button:hover {
+                background-color: #E2E2E2;
+                color: #061324;
+            }
+        }
+    }
+
+
 
     .icons {
         display: flex;

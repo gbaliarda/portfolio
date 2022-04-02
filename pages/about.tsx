@@ -33,7 +33,7 @@ const aboutPage: NextPage = () => {
                         <div className={styles.topRightPart}></div>
                     </div>
                     <div className={styles.imageContainer}>
-                        <img src="profilePicture.jpg" alt="Profile photo" className={styles.profileImg} />
+                        <img src="icono.png" alt="Profile photo" className={styles.profileImg} />
                     </div>
                 </div>
             </div>
