@@ -20,7 +20,7 @@ const landingPage: NextPage = () => {
 
                 <div className={styles.buttons}>
                     <div className={styles.leftButtons}>
-                        <a href="#" className={styles.button}>CONTACT</a>
+                        <a href="mailto:gonzalobaliarda1@gmail.com" className={styles.button}>CONTACT</a>
                         <a href="#about" className={styles.button}>ABOUT</a>
                     </div>
                     <div className={styles.rightButtons}>
@@ -35,12 +35,12 @@ const landingPage: NextPage = () => {
                             <Image src={linkedinSVG} alt="Linkedin" />
                         </div>
                     </a>
-                    <a href="#" className={styles.iconLink} target="_blank">
+                    <a href="https://www.github.com/gbaliarda" className={styles.iconLink} target="_blank">
                         <div className={styles.icon}>
                             <Image src={githubSVG} alt="GitHub" />
                         </div>
                     </a>
-                    <a href="#" className={styles.iconLink} target="_blank">
+                    <a href="mailto:gonzalobaliarda1@gmail.com" className={styles.iconLink}>
                         <div className={styles.icon}>
                             <Image src={mailSVG} alt="Mail" />
                         </div>
