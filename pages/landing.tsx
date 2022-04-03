@@ -5,7 +5,11 @@ import linkedinSVG from '../public/icons8-linkedin.svg'
 import githubSVG from '../public/icons8-github.svg'
 import mailSVG from '../public/icons8-mail.svg'
 
-const landingPage: NextPage = () => {
+interface Props {
+    toggleModal: () => void
+}
+
+const landingPage = ({ toggleModal }: Props) => {
     return (
         <div className={styles.container}>
             <div className={styles.content}>

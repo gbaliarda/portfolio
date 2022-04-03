@@ -1,13 +1,19 @@
 // https://github.com/vercel/next.js/tree/canary/examples
 import type { NextPage } from 'next'
+import { useState } from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import Landing from './landing'
 import About from './about'
 import Projects from './projects'
+import Modal from '../components/Modal'
 
 const Home: NextPage = () => {
+  const [isShown, setIsShown] = useState(false);
+  const toggleModal = () => {
+    setIsShown(!isShown);
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -19,8 +25,10 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <div className={styles.scrollingBox}>
+          <Modal title={'Contact'} isShown={isShown} hide={toggleModal} />
+
           <section id="landing">
-            <Landing></Landing>
+            <Landing toggleModal={toggleModal}></Landing>
           </section>
 
           <section id="about">

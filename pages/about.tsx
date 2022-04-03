@@ -31,7 +31,7 @@ const aboutPage: NextPage = () => {
                         <div className={styles.topRightPart}></div>
                     </div>
                     <div className={styles.imageContainer}>
-                        <img src="icono.png" alt="Profile photo" className={styles.profileImg} />
+                        <img src="software.png" alt="Profile photo" className={styles.profileImg} />
                     </div>
                 </div>
             </div>
@@ -40,14 +40,14 @@ const aboutPage: NextPage = () => {
                 <div className={styles.content}>
                     <div className={styles.leftContent}>
                         <SkillBar skillName='Java' progress={80}></SkillBar>
-                        <SkillBar skillName='C' progress={85}></SkillBar>
+                        <SkillBar skillName='C' progress={80}></SkillBar>
                         <SkillBar skillName='HTML/CSS' progress={75}></SkillBar>
                         <SkillBar skillName='JavaScript' progress={70}></SkillBar>
                         <SkillBar skillName='SQL' progress={80}></SkillBar>
                     </div>
                     <div className={styles.rightContent}>
                         <SkillBar skillName='Python' progress={50}></SkillBar>
-                        <SkillBar skillName='Solidity' progress={50}></SkillBar>
+                        <SkillBar skillName='Solidity' progress={40}></SkillBar>
                         <SkillBar skillName='Ruby' progress={40}></SkillBar>
                         <SkillBar skillName='Kotlin' progress={40}></SkillBar>
                         <SkillBar skillName='React' progress={70}></SkillBar>
