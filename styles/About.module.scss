@@ -1,0 +1,353 @@
+.container {
+    height: 100vh;
+    min-height: 700px;
+    width: 100vw;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        height: 10vh;
+        min-height: 56px;
+        width: 200px;
+        display: flex;
+        position: relative;
+
+        .name {
+            left: 0;
+            right: 0;
+            position: absolute;
+            margin: auto;
+            width: fit-content;
+
+            color: #E2E2E2;
+            background-color: #061324;
+            font-size: 32px;
+            top: 25%;
+        }
+
+        .leftTitle {
+            width: 50%;
+            height: 100%;
+            border-right: 2px solid #7800D7;
+        }
+
+        .rightTitle {
+            width: 50%;
+            height: 100%;
+            border-left: 1px solid #7800D7;
+        }
+    }
+
+    @media (min-width: 940px) {
+        .titleLine {
+            width: 678px;
+            margin: 0;
+            margin-right: 241px;
+            background-color: #7800D7;
+            border: 0;
+            height: 2px;
+        }
+
+        .description {
+            border-left: 2px solid #7800D7;
+            width: 920px;
+            height: 350px;
+            padding-left: 30px;
+            display: flex;
+
+            .descriptionText {
+                margin-top: 30px;
+                margin-right: 40px;
+                color: #c2c2c2;
+                text-align: justify;
+                width: 50%;
+                letter-spacing: 1px;
+
+                .colorDescription {
+                    margin: 0;
+                    color: #7800D7;
+                }
+            }
+
+            .firstDescriptionText {
+                margin-top: 0;
+            }
+
+            .profileImage {
+                display: flex;
+                flex-direction: column;
+
+                .topPart {
+                    height: 30px;
+                    display: flex;
+
+                    .topLeftPart {
+                        border-right: 1px solid #7800D7;
+                        height: 100%;
+                        width: 50%;
+                    }
+
+                    .topRightPart {
+                        border-left: 1px solid #7800D7;
+                        height: 100%;
+                        width: 50%;
+                    }
+                }
+
+                .imageContainer {
+                    height: 330px;
+                    width: 330px;
+                    border-radius: 10px;
+                    box-shadow:
+                        20px 20px 0 -1px #061324,
+                        20px 20px 0px 2px #7800D7;
+
+                    .profileImg {
+                        height: 330px;
+                        width: 330px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+
+        .skills {
+            flex-grow: 1;
+            width: 920px;
+            display: flex;
+
+            .borderLeft {
+                height: 100%;
+                width: 2px;
+                background: linear-gradient(rgba(120, 0, 215, 1), rgba(209, 0, 50, 1));
+            }
+
+            .content {
+                padding-top: 80px;
+                justify-content: space-evenly;
+                height: 100%;
+                width: 918px;
+                display: flex;
+                height: 280px;
+
+                .leftContent,
+                .rightContent {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 760px) and (max-width: 940px) {
+        .titleLine {
+            width: calc(50vw + 40px + 2vw + 132px);
+            align-self: flex-start;
+            margin: 0;
+            margin-left: 2.5vw;
+            background-color: #7800D7;
+            border: 0;
+            height: 2px;
+        }
+
+        .description {
+            border-left: 2px solid #7800D7;
+            width: 95vw;
+            height: 400px;
+            padding-left: 2vw;
+            display: flex;
+
+            .descriptionText {
+                margin-top: 30px;
+                margin-right: 40px;
+                color: #c2c2c2;
+                text-align: justify;
+                width: 50vw;
+                letter-spacing: 1px;
+                font-size: 14px;
+
+                .colorDescription {
+                    margin: 0;
+                    color: #7800D7;
+                }
+            }
+
+            .firstDescriptionText {
+                margin-top: 0;
+            }
+
+            .profileImage {
+                display: flex;
+                flex-direction: column;
+
+                .topPart {
+                    height: 30px;
+                    display: flex;
+
+                    .topLeftPart {
+                        border-right: 1px solid #7800D7;
+                        height: 100%;
+                        width: 50%;
+                    }
+
+                    .topRightPart {
+                        border-left: 1px solid #7800D7;
+                        height: 100%;
+                        width: 50%;
+                    }
+                }
+
+                .imageContainer {
+                    height: 260px;
+                    width: 260px;
+                    border-radius: 10px;
+                    box-shadow:
+                        20px 20px 0 -1px #061324,
+                        20px 20px 0px 2px #7800D7;
+
+                    .profileImg {
+                        height: 260px;
+                        width: 260px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+
+        .skills {
+            flex-grow: 1;
+            width: 95vw;
+            display: flex;
+
+            .borderLeft {
+                height: 100%;
+                width: 2px;
+                background: linear-gradient(rgba(120, 0, 215, 1), rgba(209, 0, 50, 1));
+            }
+
+            .content {
+                padding-top: 0;
+                padding-bottom: 8vh;
+                justify-content: space-evenly;
+                height: 100%;
+                width: calc(95vw - 2px);
+                display: flex;
+                height: 280px;
+
+                .leftContent,
+                .rightContent {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 760px) {
+        height: 100%;
+
+        .titleLine {
+            display: none;
+        }
+
+        .description {
+            border-top: 2px solid #7800D7;
+            width: 70vw;
+            min-width: 330px;
+            flex-direction: column-reverse;
+            display: flex;
+            align-items: center;
+
+            .descriptionText {
+
+                color: #c2c2c2;
+                text-align: justify;
+                width: 70vw;
+                min-width: 300px;
+                height: fit-content;
+                letter-spacing: 1px;
+                font-size: 18px;
+
+                .colorDescription {
+                    margin: 0;
+                    color: #7800D7;
+                }
+            }
+
+            .firstDescriptionText {
+                margin-top: 0;
+            }
+
+            .profileImage {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 60px;
+
+                .topPart {
+                    height: 30px;
+                    display: flex;
+
+                    .topLeftPart {
+                        border-right: 1px solid #7800D7;
+                        height: 100%;
+                        width: 50%;
+                    }
+
+                    .topRightPart {
+                        border-left: 1px solid #7800D7;
+                        height: 100%;
+                        width: 50%;
+                    }
+                }
+
+                .imageContainer {
+                    height: 260px;
+                    width: 260px;
+                    border-radius: 10px;
+                    box-shadow:
+                        20px 20px 0 -1px #061324,
+                        20px 20px 0px 2px #7800D7;
+
+                    .profileImg {
+                        height: 260px;
+                        width: 260px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+
+        .skills {
+            width: 70vw;
+            height: 400px;
+            min-width: 300px;
+            display: flex;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #7800D7;
+
+            .content {
+                justify-content: space-evenly;
+                height: 100%;
+                width: calc(95vw - 2px);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .leftContent,
+                .rightContent {
+                    height: 180px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    column-gap: 10px;
+                    -moz-column-gap: 10px;
+                }
+            }
+        }
+    }
+
+}

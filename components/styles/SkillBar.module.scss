@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    align-items: center;
+
+    .text {
+        color: #c2c2c2;
+        font-size: 18px;
+        margin-right: 30px;
+        width: 80px;
+    }
+
+    .bar {
+        width: 250px;
+        background-color: #420076;
+        height: 25px;
+        border-radius: 10px;
+
+        .progressBar {
+            height: 25px;
+            background-color: #8800F3;
+            border-radius: 10px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .bar {
+            width: 150px;
+        }
+    }
+}
