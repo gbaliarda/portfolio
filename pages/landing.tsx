@@ -33,12 +33,12 @@ const landingPage = ({ toggleModal }: Props) => {
                 </div>
 
                 <div className={styles.icons}>
-                    <a href="#" className={styles.iconLink} target="_blank">
+                    <a href="https://www.linkedin.com/in/gonzalo-baliarda-828588236/" className={styles.iconLink} target="_blank" rel="noreferrer">
                         <div className={styles.icon}>
                             <Image src={linkedinSVG} alt="Linkedin" />
                         </div>
                     </a>
-                    <a href="https://www.github.com/gbaliarda" className={styles.iconLink} target="_blank">
+                    <a href="https://www.github.com/gbaliarda" className={styles.iconLink} target="_blank" rel="noreferrer">
                         <div className={styles.icon}>
                             <Image src={githubSVG} alt="GitHub" />
                         </div>

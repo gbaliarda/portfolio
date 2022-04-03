@@ -14,7 +14,7 @@ const ProjectCard = (props: Props) => {
         <div className={styles.container}>
             <p className={styles.title}>{props.title}</p>
             <div className={styles.githubIcon} style={{ "visibility": props.github ? "visible" : "hidden" }}>
-                <a href={props.linkGithub} target="_blank">
+                <a href={props.linkGithub} target="_blank" rel="noreferrer">
                     <img src="icons8-github.svg" alt="Github link"></img>
                 </a>
             </div>

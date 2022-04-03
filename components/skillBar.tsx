@@ -6,7 +6,7 @@ interface Props {
     progress: number,
 }
 
-const skillBar = ({ skillName, progress }: Props) => {
+const SkillBar = ({ skillName, progress }: Props) => {
     const [barSize, setBarSize] = useState(0)
 
     const updateProgress = () => {
@@ -35,4 +35,4 @@ const skillBar = ({ skillName, progress }: Props) => {
     )
 }
 
-export default skillBar
+export default SkillBar
