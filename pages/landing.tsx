@@ -16,7 +16,7 @@ const landingPage = ({ toggleModal }: Props) => {
                 <img src="triangle.svg" alt="Triangle photo" className={styles.triangle} />
                 <div className={styles.mainContainer}>
                     <h1 className={styles.name}>Gonzalo Baliarda</h1>
-                    <p className={styles.description}>Software Developer</p>
+                    <p className={styles.description}>Software Engineer</p>
                 </div>
 
                 <hr className={styles.lineOne} />
@@ -28,24 +28,24 @@ const landingPage = ({ toggleModal }: Props) => {
                     </div>
                     <div className={styles.rightButtons}>
                         <a href="#projects" className={styles.button}>PROJECTS</a>
-                        <a href="#" className={styles.button}>RESUME</a>
+                        <a href="/resume.pdf" className={styles.button} target="_blank" rel="noreferrer">RESUME</a>
                     </div>
                 </div>
 
                 <div className={styles.icons}>
-                    <a href="https://www.linkedin.com/in/gonzalo-baliarda-828588236/" className={styles.iconLink} target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/gonzalo-baliarda" className={styles.iconLink} target="_blank" rel="noreferrer">
                         <div className={styles.icon}>
-                            <Image src={linkedinSVG} alt="Linkedin" />
+                            <Image src={linkedinSVG} alt="Linkedin" width={38} height={38} />
                         </div>
                     </a>
                     <a href="https://www.github.com/gbaliarda" className={styles.iconLink} target="_blank" rel="noreferrer">
                         <div className={styles.icon}>
-                            <Image src={githubSVG} alt="GitHub" />
+                            <Image src={githubSVG} alt="GitHub" width={37} height={37} />
                         </div>
                     </a>
                     <a href="mailto:gonzalobaliarda1@gmail.com" className={styles.iconLink}>
                         <div className={styles.icon}>
-                            <Image src={mailSVG} alt="Mail" />
+                            <Image src={mailSVG} alt="Mail" width={38} height={38} />
                         </div>
                     </a>
                 </div>

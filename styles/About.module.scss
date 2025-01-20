@@ -53,13 +53,13 @@
         .description {
             border-left: 2px solid #7800D7;
             width: 920px;
-            height: 350px;
+            height: 480px;
             padding-left: 30px;
             display: flex;
 
             .descriptionText {
                 margin-top: 30px;
-                margin-right: 40px;
+                margin-right: 37px;
                 color: #c2c2c2;
                 text-align: justify;
                 width: 50%;
@@ -120,12 +120,12 @@
 
             .borderLeft {
                 height: 100%;
-                width: 2px;
+                width: 1.75px;
                 background: linear-gradient(rgba(120, 0, 215, 1), rgba(209, 0, 50, 1));
             }
 
             .content {
-                padding-top: 80px;
+                padding-bottom: 80px;
                 justify-content: space-evenly;
                 height: 100%;
                 width: 918px;
@@ -134,9 +134,29 @@
 
                 .leftContent,
                 .rightContent {
+                    color: #c2c2c2;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
+                    list-style: none;
+
+                    li {
+                        position: relative;
+                        padding-left: 1.5rem; /* Da espacio para el icono cuadrado */
+                        margin-bottom: 0.5rem;
+                      }
+                      
+                    li::before {
+                        content: ''; /* Genera el cuadrado */
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 10px; /* Tamaño del cuadrado */
+                        height: 10px;
+                        background-color: #7800D7; /* Color del cuadrado */
+                        border-radius: 2px; /* Ajusta si quieres esquinas redondeadas */
+                    }
                 }
             }
         }
@@ -239,6 +259,7 @@
 
                 .leftContent,
                 .rightContent {
+                    color: #c2c2c2;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
@@ -339,6 +360,7 @@
 
                 .leftContent,
                 .rightContent {
+                    color: #c2c2c2;
                     height: 180px;
                     display: flex;
                     flex-direction: column;

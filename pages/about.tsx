@@ -15,15 +15,18 @@ const aboutPage: NextPage = () => {
                 <div className={styles.descriptionText}>
                     <p className={styles.firstDescriptionText}>
                         Hello! My name is Gonzalo Baliarda and i’m a
-                        <span className={styles.colorDescription}> Software Engineering</span> student in <span className={styles.colorDescription}>ITBA</span>.
-                        My interest in software started way back in high school
-                        wanting to <span className={styles.colorDescription}>innovate</span> and <span className={styles.colorDescription}>create</span> different solutions to any
-                        daily problem in order to automatize and increase productivity.
+                        <span className={styles.colorDescription}> Software Engineering</span> graduated from <span className={styles.colorDescription}>ITBA</span>, based in Buenos Aires, Argentina.
+                        I’m currently working as a <span className={styles.colorDescription}>Data & AI Intern</span> at Accenture, where I focus on solving client problems by implementing innovative solutions using cutting-edge technologies.
                     </p>
-                    <p>I’m familiar with both Frontend and Backend development, using web frameworks such as React, NextJS, Vue and Spring.</p>
-                    <p>Nowadays, i’m getting myself into <span className={styles.colorDescription}>Web3</span> and <span className={styles.colorDescription}>Blockchain</span>, developing smart contracts and deploying them in testnets and localnets with Solidity and Python</p>
+                    <p>
+                        I have hands-on experience in full-stack development, data science, machine learning and blockchain. My technical toolkit includes frameworks like React, NextJS, Vue, and Spring for web development, as well as Python for data-driven solutions.
+                    </p>
+                    <p>
+                        Nowadays, I’m deeply interested in <span className={styles.colorDescription}>Generative AI</span>, <span className={styles.colorDescription}>Large Language Models (LLMs)</span>, and <span className={styles.colorDescription}>Machine Learning</span>. 
+                        I’m passionate about exploring and applying these technologies to create innovative solutions that address real-world challenges.
+                    </p>
                     <br />
-                    <p>Some technologies i’ve been using lately are:</p>
+                    <p>Some of my skills include:</p>
                 </div>
                 <div className={styles.profileImage}>
                     <div className={styles.topPart}>
@@ -38,20 +41,19 @@ const aboutPage: NextPage = () => {
             <div className={styles.skills}>
                 <div className={styles.borderLeft}></div>
                 <div className={styles.content}>
-                    <div className={styles.leftContent}>
-                        <SkillBar skillName='Java' progress={80}></SkillBar>
-                        <SkillBar skillName='C' progress={80}></SkillBar>
-                        <SkillBar skillName='HTML/CSS' progress={75}></SkillBar>
-                        <SkillBar skillName='JavaScript' progress={70}></SkillBar>
-                        <SkillBar skillName='SQL' progress={80}></SkillBar>
-                    </div>
-                    <div className={styles.rightContent}>
-                        <SkillBar skillName='Python' progress={50}></SkillBar>
-                        <SkillBar skillName='Solidity' progress={40}></SkillBar>
-                        <SkillBar skillName='Ruby' progress={40}></SkillBar>
-                        <SkillBar skillName='Kotlin' progress={40}></SkillBar>
-                        <SkillBar skillName='React' progress={70}></SkillBar>
-                    </div>
+                    <ul className={styles.leftContent}>
+                        <li>Programming Languages: Java, C, Python, Ruby, Solidity</li>
+                        <li>HTML/CSS, JavaScript and TypeScript for web full-stack development</li>
+                        <li>Web Frameworks: React, NextJS, Spring, Vue, Express</li>
+                        <li>Data analysis, Machine Learning, Deep Learning and Generative AI</li>
+                    </ul>
+                    <ul className={styles.rightContent}>
+                        <li>Database Management: SQL, PostgreSQL</li>
+                        <li>Version Control: Git, GitHub</li>
+                        <li>Cloud Computing: Azure</li>
+                        <li>Agile Methodologies and Tools: Scrum, Jira</li>
+                        <li>Rest API Development and Integration</li>
+                    </ul>
                 </div>
             </div>
         </div>
