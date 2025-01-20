@@ -15,6 +15,11 @@ const projectsPage: NextPage = () => {
             </div>
             <hr className={styles.titleLine} />
             <div className={styles.projects}>
+                {/* <ProjectCard title='CryptoViper' github={true} linkGithub='https://github.com/gbaliarda/cryptoviper-webapp' description='Web3 game application where users can play and earn money, deployed in the Binance Smart Chain (Testnet).' tech={['NextJS', 'JavaScript']} ></ProjectCard>
+                <ProjectCard title='CryptoViper' github={true} linkGithub='https://github.com/gbaliarda/cryptoviper-webapp' description='Web3 game application where users can play and earn money, deployed in the Binance Smart Chain (Testnet).' tech={['NextJS', 'JavaScript']} ></ProjectCard>
+                <ProjectCard title='CryptoViper' github={true} linkGithub='https://github.com/gbaliarda/cryptoviper-webapp' description='Web3 game application where users can play and earn money, deployed in the Binance Smart Chain (Testnet).' tech={['NextJS', 'JavaScript']} ></ProjectCard>
+                <ProjectCard title='CryptoViper' github={true} linkGithub='https://github.com/gbaliarda/cryptoviper-webapp' description='Web3 game application where users can play and earn money, deployed in the Binance Smart Chain (Testnet).' tech={['NextJS', 'JavaScript']} ></ProjectCard>
+                 */}
                 <ProjectCard title='CryptoViper' github={true} linkGithub='https://github.com/gbaliarda/cryptoviper-webapp' description='Web3 game application where users can play and earn money, deployed in the Binance Smart Chain (Testnet).' tech={['NextJS', 'JavaScript']} ></ProjectCard>
                 <ProjectCard title='Traning Webapp' github={true} linkGithub='https://github.com/gbaliarda/traning-webapp' description='Web application where users can create and share personal exercises and routines' tech={['Vue', 'JavaScript']} ></ProjectCard>
                 <ProjectCard title='Traning Mobileapp' github={true} linkGithub='https://github.com/gbaliarda/traning-mobileapp' description='Mobile application where users can exercise and see their routines and personal exercises created with the webapp.' tech={['Kotlin']} ></ProjectCard>

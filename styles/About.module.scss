@@ -9,7 +9,7 @@
 
     .title {
         height: 10vh;
-        min-height: 56px;
+        min-height: 64px;
         width: 200px;
         display: flex;
         position: relative;
@@ -372,4 +372,15 @@
         }
     }
 
+    @media (max-height: 824px) {
+        .description {
+            height: 420px;
+            font-size: 14px;
+        }
+
+        .skills {
+            height: 200px;
+            font-size: 14px;
+        }
+    }
 }
