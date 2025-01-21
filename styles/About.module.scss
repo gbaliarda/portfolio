@@ -30,13 +30,13 @@
         .leftTitle {
             width: 50%;
             height: 100%;
-            border-right: 2px solid #7800D7;
+            border-right: 2px solid #c680ff;
         }
 
         .rightTitle {
             width: 50%;
             height: 100%;
-            border-left: 1px solid #7800D7;
+            border-left: 1px solid #c680ff;
         }
     }
 
@@ -45,13 +45,13 @@
             width: 678px;
             margin: 0;
             margin-right: 241px;
-            background-color: #7800D7;
+            background-color: #c680ff;
             border: 0;
             height: 2px;
         }
 
         .description {
-            border-left: 2px solid #7800D7;
+            border-left: 2px solid #c680ff;
             width: 920px;
             height: 480px;
             padding-left: 30px;
@@ -67,7 +67,7 @@
 
                 .colorDescription {
                     margin: 0;
-                    color: #7800D7;
+                    color: #c680ff;
                 }
             }
 
@@ -84,13 +84,13 @@
                     display: flex;
 
                     .topLeftPart {
-                        border-right: 1px solid #7800D7;
+                        border-right: 1px solid #c680ff;
                         height: 100%;
                         width: 50%;
                     }
 
                     .topRightPart {
-                        border-left: 1px solid #7800D7;
+                        border-left: 1px solid #c680ff;
                         height: 100%;
                         width: 50%;
                     }
@@ -102,7 +102,7 @@
                     border-radius: 10px;
                     box-shadow:
                         20px 20px 0 -1px #061324,
-                        20px 20px 0px 2px #7800D7;
+                        20px 20px 0px 2px #c680ff;
 
                     .profileImg {
                         height: 330px;
@@ -121,7 +121,7 @@
             .borderLeft {
                 height: 100%;
                 width: 1.75px;
-                background: linear-gradient(rgba(120, 0, 215, 1), rgba(209, 0, 50, 1));
+                background: linear-gradient(rgba(198, 128, 255, 1), rgba(255, 77, 118, 1));
             }
 
             .content {
@@ -154,7 +154,7 @@
                         transform: translateY(-50%);
                         width: 10px; /* Tamaño del cuadrado */
                         height: 10px;
-                        background-color: #7800D7; /* Color del cuadrado */
+                        background-color: #c680ff; /* Color del cuadrado */
                         border-radius: 2px; /* Ajusta si quieres esquinas redondeadas */
                     }
                 }
@@ -168,13 +168,13 @@
             align-self: flex-start;
             margin: 0;
             margin-left: 2.5vw;
-            background-color: #7800D7;
+            background-color: #c680ff;
             border: 0;
             height: 2px;
         }
 
         .description {
-            border-left: 2px solid #7800D7;
+            border-left: 2px solid #c680ff;
             width: 95vw;
             height: 400px;
             padding-left: 2vw;
@@ -191,7 +191,7 @@
 
                 .colorDescription {
                     margin: 0;
-                    color: #7800D7;
+                    color: #c680ff;
                 }
             }
 
@@ -208,13 +208,13 @@
                     display: flex;
 
                     .topLeftPart {
-                        border-right: 1px solid #7800D7;
+                        border-right: 1px solid #c680ff;
                         height: 100%;
                         width: 50%;
                     }
 
                     .topRightPart {
-                        border-left: 1px solid #7800D7;
+                        border-left: 1px solid #c680ff;
                         height: 100%;
                         width: 50%;
                     }
@@ -226,7 +226,7 @@
                     border-radius: 10px;
                     box-shadow:
                         20px 20px 0 -1px #061324,
-                        20px 20px 0px 2px #7800D7;
+                        20px 20px 0px 2px #c680ff;
 
                     .profileImg {
                         height: 260px;
@@ -245,7 +245,7 @@
             .borderLeft {
                 height: 100%;
                 width: 2px;
-                background: linear-gradient(rgba(120, 0, 215, 1), rgba(209, 0, 50, 1));
+                background: linear-gradient(rgba(198, 128, 255, 1), rgba(255, 77, 118, 1));
             }
 
             .content {
@@ -276,7 +276,7 @@
         }
 
         .description {
-            border-top: 2px solid #7800D7;
+            border-top: 2px solid #c680ff;
             width: 70vw;
             min-width: 330px;
             flex-direction: column-reverse;
@@ -295,7 +295,7 @@
 
                 .colorDescription {
                     margin: 0;
-                    color: #7800D7;
+                    color: #c680ff;
                 }
             }
 
@@ -313,13 +313,13 @@
                     display: flex;
 
                     .topLeftPart {
-                        border-right: 1px solid #7800D7;
+                        border-right: 1px solid #c680ff;
                         height: 100%;
                         width: 50%;
                     }
 
                     .topRightPart {
-                        border-left: 1px solid #7800D7;
+                        border-left: 1px solid #c680ff;
                         height: 100%;
                         width: 50%;
                     }
@@ -331,7 +331,7 @@
                     border-radius: 10px;
                     box-shadow:
                         20px 20px 0 -1px #061324,
-                        20px 20px 0px 2px #7800D7;
+                        20px 20px 0px 2px #c680ff;
 
                     .profileImg {
                         height: 260px;
@@ -348,7 +348,7 @@
             min-width: 300px;
             display: flex;
             padding-bottom: 20px;
-            border-bottom: 2px solid #7800D7;
+            border-bottom: 2px solid #c680ff;
 
             .content {
                 justify-content: space-evenly;

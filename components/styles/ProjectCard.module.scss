@@ -41,22 +41,22 @@
         overflow: hidden;
         color: #c2c2c2;
         align-self: flex-start;
+        overflow-y: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     .tech {
         width: 100%;
         flex-grow: 1;
-        color: #7800D7;
-        justify-content: flex-start;
+        flex-wrap: wrap;
+        color: #c680ff;
+        justify-content: space-around;
         margin: 0;
         display: flex;
-
-        p {
-            margin-right: 50px;
-        }
-
-        :first-child {
-            margin-left: 50px;
-        }
     }
 }
