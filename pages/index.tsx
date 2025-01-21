@@ -18,7 +18,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>Gonzalo Baliarda - Portfolio</title>
-        <meta name="description" content="Portfolio created with NextJS" />
+        <meta name="description" content="Hello! My name is Gonzalo Baliarda and i’m a Software Engineering graduated from ITBA, based in Buenos Aires, Argentina." />
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet" />
       </Head>

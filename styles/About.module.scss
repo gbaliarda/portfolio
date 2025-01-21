@@ -30,7 +30,7 @@
         .leftTitle {
             width: 50%;
             height: 100%;
-            border-right: 2px solid #c680ff;
+            border-right: 1px solid #c680ff;
         }
 
         .rightTitle {
@@ -42,7 +42,7 @@
 
     @media (min-width: 940px) {
         .titleLine {
-            width: 678px;
+            width: 678.5px;
             margin: 0;
             margin-right: 241px;
             background-color: #c680ff;

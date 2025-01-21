@@ -82,6 +82,10 @@
                 align-items: center;
                 justify-content: flex-start;
 
+                :first-child {
+                    margin-left: -1px;
+                }
+
                 :last-child {
                     border-top-right-radius: 5px;
                     border-bottom-right-radius: 5px;
