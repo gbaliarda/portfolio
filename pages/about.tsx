@@ -14,16 +14,16 @@ const aboutPage: NextPage = () => {
             <div className={styles.description}>
                 <div className={styles.descriptionText}>
                     <p className={styles.firstDescriptionText}>
-                        Hello! My name is Gonzalo Baliarda and i’m a
-                        <span className={styles.colorDescription}> Software Engineering</span> graduated from <span className={styles.colorDescription}>ITBA</span>, based in Buenos Aires, Argentina.
-                        I’m currently working as a <span className={styles.colorDescription}>Data & AI Intern</span> at Accenture, where I focus on solving client problems by implementing innovative solutions using cutting-edge technologies.
+                    Hello! My name is Gonzalo Baliarda and I’m a
+                    <span className={styles.colorDescription}> Software Engineer</span> graduated from <span className={styles.colorDescription}>ITBA</span>, based in Buenos Aires, Argentina.
+                    I’m currently working as a <span className={styles.colorDescription}>Data Scientist</span> at Accenture, where I design and ship production-grade <span className={styles.colorDescription}>Generative AI</span> systems for clients across multiple industries.
                     </p>
                     <p>
-                        I have hands-on experience in full-stack development, data science, machine learning and blockchain. My technical toolkit includes frameworks like React, NextJS, Vue, and Spring for web development, as well as Python for data-driven solutions.
+                    I build end-to-end solutions with <span className={styles.colorDescription}>LLMs</span>, <span className={styles.colorDescription}>Agentic AI</span> (single and multi-agent), and <span className={styles.colorDescription}>RAG</span>—from orchestration and tooling to evaluation and deployment.
+                    My toolkit spans <span className={styles.colorDescription}>Databricks</span>, <span className={styles.colorDescription}>Airflow</span>, <span className={styles.colorDescription}>Python</span>, and full-stack development with <span className={styles.colorDescription}>React</span>/<span className={styles.colorDescription}>Next.js</span> and <span className={styles.colorDescription}>Spring</span>.
                     </p>
                     <p>
-                        Nowadays, I’m deeply interested in <span className={styles.colorDescription}>Generative AI</span>, <span className={styles.colorDescription}>Large Language Models (LLMs)</span>, and <span className={styles.colorDescription}>Machine Learning</span>. 
-                        I’m passionate about exploring and applying these technologies to create innovative solutions that address real-world challenges.
+                    Day-to-day I focus on building reliable agent architectures, scalable retrieval, and strong observability—turning hard problems into shipped products. I enjoy collaborating across teams, diving into tough bugs, and making complex AI systems simple to use.
                     </p>
                     <br />
                     <p>Some of my skills include:</p>
@@ -42,17 +42,17 @@ const aboutPage: NextPage = () => {
                 <div className={styles.borderLeft}></div>
                 <div className={styles.content}>
                     <ul className={styles.leftContent}>
-                        <li>Programming Languages: Java, C, Python, Ruby, Solidity</li>
-                        <li>HTML/CSS, JavaScript and TypeScript for web full-stack development</li>
-                        <li>Web Frameworks: React, NextJS, Spring, Vue, Express</li>
-                        <li>Data analysis, Machine Learning, Deep Learning and Generative AI</li>
+                    <li><strong>Programming Languages:</strong> Python, Java, C, TypeScript/JavaScript, Ruby, Solidity</li>
+                    <li><strong>GenAI & Agents:</strong> LLMs, RAG, Agentic AI (single & multi-agent), prompt/tool design, LangChain, LangGraph</li>
+                    <li><strong>Data & MLOps:</strong> Databricks, Apache Airflow orchestration</li>
+                    <li><strong>Web & APIs:</strong> React, Next.js, Spring Boot, Express, FastAPI</li>
                     </ul>
+
                     <ul className={styles.rightContent}>
-                        <li>Database Management: SQL, PostgreSQL</li>
-                        <li>Version Control: Git, GitHub</li>
-                        <li>Cloud Computing: Azure</li>
-                        <li>Agile Methodologies and Tools: Scrum, Jira</li>
-                        <li>Rest API Development and Integration</li>
+                    <li><strong>Databases SQL & NoSQL:</strong> PostgreSQL, MongoDB and more</li>
+                    <li><strong>Cloud & DevOps:</strong> Azure & AWS, Docker, CI/CD (GitHub Actions), Kubernetes</li>
+                    <li><strong>Version Control & Process:</strong> Git, GitHub, Agile (Scrum, Jira)</li>
+                    <li><strong>API Development:</strong> RESTful design & integrations</li>
                     </ul>
                 </div>
             </div>

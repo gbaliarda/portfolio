@@ -28,7 +28,7 @@ const landingPage = ({ toggleModal }: Props) => {
                     </div>
                     <div className={styles.rightButtons}>
                         <a href="#projects" className={styles.button}>PROJECTS</a>
-                        <a href="/resume.pdf" className={styles.button} target="_blank" rel="noreferrer">RESUME</a>
+                        <a href="/Gonzalo Baliarda - Resume.pdf" className={styles.button} target="_blank" rel="noreferrer">RESUME</a>
                     </div>
                 </div>
 
